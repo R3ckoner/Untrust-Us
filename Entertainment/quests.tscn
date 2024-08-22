@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://tc50h17lthp0"]
+
+[ext_resource type="Script" path="res://COGITO/QuestSystem/Components/cogito_quest_updater.gd" id="1_6hj84"]
+[ext_resource type="Resource" uid="uid://b84u4bpgovhcn" path="res://SettlingIn.tres" id="2_f17qa"]
+[ext_resource type="Resource" uid="uid://b7wrhr74mptlf" path="res://COGITO/QuestSystem/Quests/DemoSceneQuests/Demo_StealLaptop.tres" id="3_40mhs"]
+[ext_resource type="Resource" uid="uid://drmtc0tqmwquk" path="res://COGITO/QuestSystem/Quests/DemoSceneQuests/Demo_AccessArchive.tres" id="4_mh8sx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_68nml"]
+size = Vector3(5, 3.3, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtdhi"]
+size = Vector3(7.6, 2.52949, 7.69082)
+
+[node name="QUESTS" type="Node3D"]
+
+[node name="Archive_QuestStarter" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -18)
+script = ExtResource("1_6hj84")
+quest_to_update = ExtResource("2_f17qa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Archive_QuestStarter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.39444, -0.5)
+shape = SubResource("BoxShape3D_68nml")
+
+[node name="Laptop_QuestStarter" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -18)
+script = ExtResource("1_6hj84")
+quest_to_update = ExtResource("3_40mhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Laptop_QuestStarter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15, -0.5)
+shape = SubResource("BoxShape3D_68nml")
+
+[node name="Archive_QuestEnder" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 13)
+script = ExtResource("1_6hj84")
+quest_to_update = ExtResource("4_mh8sx")
+update_type = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Archive_QuestEnder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.31475, -1.04541)
+shape = SubResource("BoxShape3D_dtdhi")
+
+[connection signal="body_entered" from="Archive_QuestStarter" to="Archive_QuestStarter" method="_on_body_entered"]
+[connection signal="body_entered" from="Laptop_QuestStarter" to="Laptop_QuestStarter" method="_on_body_entered"]
+[connection signal="body_entered" from="Archive_QuestEnder" to="Archive_QuestEnder" method="_on_body_entered"]

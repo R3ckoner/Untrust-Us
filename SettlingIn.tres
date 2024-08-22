@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CogitoQuest" load_steps=2 format=3 uid="uid://b84u4bpgovhcn"]
+
+[ext_resource type="Script" path="res://COGITO/QuestSystem/CustomResources/cogito_quest.gd" id="1_tnrwg"]
+
+[resource]
+script = ExtResource("1_tnrwg")
+id = 0
+quest_name = "Settling In"
+quest_title = "Settling In"
+quest_description_active = "Just drove here from the city, should probably check out the farmhouse before I do anything else"
+quest_description_completed = "So this is it huh? Could go in or explore some more..."
+quest_description_failed = "You failed this quest."
+quest_counter_current = 0
+quest_counter_goal = 0

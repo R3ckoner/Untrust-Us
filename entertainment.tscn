@@ -1,0 +1,68 @@
+[gd_scene load_steps=14 format=3 uid="uid://ud6gxst0lk2l"]
+
+[ext_resource type="PackedScene" uid="uid://dlau2j3f6xcqg" path="res://Entertainment/Models/Entertainment.dae" id="1_j614s"]
+[ext_resource type="Texture2D" uid="uid://b2afinehi5h1o" path="res://Entertainment/Textures/Entertainment.png" id="2_tavw3"]
+[ext_resource type="Texture2D" uid="uid://vsyf7fiwlunb" path="res://Entertainment/Textures/Electronics.jpg" id="3_jvw8m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_joajp"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sg6db"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3u041"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5uh2"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjpqw"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6dsx"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gnw52"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i1y37"]
+albedo_texture = ExtResource("2_tavw3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eriqb"]
+albedo_texture = ExtResource("3_jvw8m")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6k1qc"]
+albedo_texture = ExtResource("3_jvw8m")
+
+[node name="Entertainment" instance=ExtResource("1_j614s")]
+
+[node name="Book_07" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_joajp")
+
+[node name="Book_06" parent="." index="1"]
+material_override = SubResource("StandardMaterial3D_sg6db")
+
+[node name="Book_02" parent="." index="2"]
+transform = Transform3D(0.153601, 0, 0, 0, 0.171729, 0, 0, 0, -0.171729, 4.74709, 0.21825, -1.10744)
+material_override = SubResource("StandardMaterial3D_3u041")
+
+[node name="Book_05" parent="." index="3"]
+material_override = SubResource("StandardMaterial3D_t5uh2")
+
+[node name="Book_04" parent="." index="4"]
+material_override = SubResource("StandardMaterial3D_yjpqw")
+
+[node name="Book_03" parent="." index="5"]
+material_override = SubResource("StandardMaterial3D_c6dsx")
+
+[node name="Book_01" parent="." index="6"]
+material_override = SubResource("StandardMaterial3D_gnw52")
+
+[node name="Book" parent="." index="7"]
+material_override = SubResource("StandardMaterial3D_i1y37")
+
+[node name="TV_01" parent="." index="27"]
+material_override = SubResource("StandardMaterial3D_eriqb")
+
+[node name="TV" parent="." index="28"]
+material_override = SubResource("StandardMaterial3D_6k1qc")

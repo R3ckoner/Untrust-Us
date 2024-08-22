@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cbs0tcr550wbk"
+path="res://.godot/imported/DALL·E 2024-08-21 19.17.39 - A seamless PS1-style skybox panorama with an ultrawide aspect ratio, depicting an overcast day with a mountain range in the background and a lake in t.webp-933b202d1cf1609215d1edb2e5f34cfc.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://DALL·E 2024-08-21 19.17.39 - A seamless PS1-style skybox panorama with an ultrawide aspect ratio, depicting an overcast day with a mountain range in the background and a lake in t.webp"
+dest_files=["res://.godot/imported/DALL·E 2024-08-21 19.17.39 - A seamless PS1-style skybox panorama with an ultrawide aspect ratio, depicting an overcast day with a mountain range in the background and a lake in t.webp-933b202d1cf1609215d1edb2e5f34cfc.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

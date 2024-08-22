@@ -1,0 +1,21 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://d27f2uw64n7xs"]
+
+[ext_resource type="Material" uid="uid://yna8oigv1ctw" path="res://overskypano.tres" id="1_0nj81"]
+
+[sub_resource type="Sky" id="Sky_ixd8a"]
+sky_material = ExtResource("1_0nj81")
+
+[resource]
+background_mode = 2
+background_energy_multiplier = 1.51
+sky = SubResource("Sky_ixd8a")
+sky_rotation = Vector3(0, -3.05433, 0)
+fog_light_color = Color(0.277634, 0.400081, 0.475103, 1)
+fog_density = 0.0001
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.003
+volumetric_fog_albedo = Color(0.590627, 0.64286, 0.677012, 1)
+volumetric_fog_sky_affect = 0.252
+adjustment_enabled = true
+adjustment_brightness = 1.08
+adjustment_saturation = 1.32

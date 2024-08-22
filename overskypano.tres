@@ -1,0 +1,7 @@
+[gd_resource type="PanoramaSkyMaterial" load_steps=2 format=3 uid="uid://yna8oigv1ctw"]
+
+[ext_resource type="Texture2D" uid="uid://ben6vw1qo1qp2" path="res://AdobeStock_918270876.jpeg" id="1_c2xiw"]
+
+[resource]
+panorama = ExtResource("1_c2xiw")
+energy_multiplier = 0.08

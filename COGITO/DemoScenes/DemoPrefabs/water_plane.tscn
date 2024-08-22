@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkfmxo0mgghcc"]
+
+[ext_resource type="Shader" path="res://COGITO/Assets/Shader/water.gdshader" id="1_rv278"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_a6yhw"]
+subdivide_width = 200
+subdivide_depth = 200
+orientation = 1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ewlq"]
+render_priority = 0
+shader = ExtResource("1_rv278")
+shader_parameter/albedo = Color(0.0509804, 0.196078, 0.243137, 1)
+shader_parameter/scroll_speed1 = Vector2(0.05, 0)
+shader_parameter/scroll_speed2 = Vector2(-0.03, 0)
+shader_parameter/blend_factor = 0.5
+shader_parameter/scale1 = Vector2(1, 1)
+shader_parameter/scale2 = Vector2(1, 1)
+shader_parameter/wave_strength = 1.0
+shader_parameter/wave_scale = 0.02
+shader_parameter/pixelation_level = 64
+shader_parameter/FoamSize = 0.5
+shader_parameter/WaterOpacity = 1.0
+shader_parameter/FoamGlowIntensity = 0.5
+
+[node name="WaterPlane" type="MeshInstance3D"]
+mesh = SubResource("QuadMesh_a6yhw")
+skeleton = NodePath("../KSI_ledge_painted_corner_double2")
+surface_material_override/0 = SubResource("ShaderMaterial_3ewlq")

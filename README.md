@@ -1,63 +1,51 @@
-# quality-godot-first-person-2
-Actually good first person controller for the Godot Engine.  
-MIT License (credit Colormatic Studios)
+![COGITO_banner](docs/Cogito_capsule_202402_jpg.jpg)
+# COGITO
+[![GodotEngine](https://img.shields.io/badge/Godot_4.2.1_stable-blue?logo=godotengine&logoColor=white)](https://godotengine.org/) [![COGITO](https://img.shields.io/badge/beta_202408-35A1D7?label=COGITO&labelColor=0E887A)](https://github.com/Phazorknight/Cogito)
+beta 202408.01
 
-This first person controller was made because there aren't many first person controllers for Godot, and the ones that do exist are pretty bad.  
-It is highly customizable and comes with many features, QOL, and clean code.
+## What is it?
+COGITO is a first Person Immersive Sim Template Project for Godot Engine 4.
+In comparison to other first person assets out there, which focus mostly on shooter mechanics, COGITO focuses on
+providing a framework for creating interactable objects and items.
 
-Some parts came from StayAtHomeDev's FPS tutorial. You can find that [here](https://www.youtube.com/playlist?list=PLEHvj4yeNfeF6s-UVs5Zx5TfNYmeCiYwf).
+COGITO is made by [Philip Drobar](https://www.philipdrobar.com) with help from [these contributors](https://github.com/Phazorknight/Cogito/graphs/contributors).
 
-# Directions
-Move with WASD, space to jump, shift to sprint, C to crouch.
+## Principles of this template
+The structure of this template always tries to adhere to the following principles:
+- **Complete**: When you download COGITO and press play, you get a functioning project out of the box. Game menu, save slot select, options and a playable level are all included.
+- **Versatile**: Wether your game is set in the future, the past or the present, use melee, projectile or no weapons at all, have low poly, stylized or realistic graphics, the template will have features for you.
+- **Modular**: Do not want to use a feature? You will be able to hide it, ignore it or strip it out without breaking COGITO. At the same time, COGITO is designed to be extendable with your own custom features or other add-ons.
+- **Approachable**: While there will always be a learning curve, we strive to make COGTIO approachable and intuitive to use, so it doesn't get in your way of making your game.
 
-**FEATURES:**
-- Extremely configurable
-- In-air momentum
-- Motion smoothing
-- FOV smoothing
-- Movement animations
-- Crouching
-- Sprinting
-- 2 crosshairs/reticles, one is animated (more to come?)
-- Controller/GamePad support (enabled through code, see wiki)
-- In-editor tools (enable editable children to use)
+## Current Features
+- First person player controller with:
+  - Sprinting, jumping, crouching, sliding, stairs handling, ladder handling
+  - Fully customizable attributes like Health, Stamina, Visibility (for stealth) - Component-based, so easy to add your own.
+  - Lots of exposed properties to tweak to your liking (speeds, headbob, fall damage, bunnyhop, etc.)
+  - Easy-to-use dynamic footstep sound system
+- Inventory System
+  - Flexible resource-based inventories
+  - Inventory UI separate from inventory logic
+  - Examples for multiple item types (consumables, keys, ammo, weapons, combinable Items)
+  - Base class to easily add your custom item types
+  - Slot-based (Minecraft) or grid-based (Resident Evil 4), the choice is yours!
+- Interaction System
+  - Component-based interactions makes it easy to turn your own objects interactive quickly and customize existing ones
+  - Examples for interactive objects like doors, drawers, carryables, turn-wheels, elevators, readable objects, keypads
+- Systemic Properties
+  - Give objects properties like "FLAMMABLE" or "WET" and they will interact with each other depending on their state and properties.
+  - For example FLAMMABLE objects can be ignited by objects that are actively on fire. Can be extinguished by objects that are WET.
+  - Straight forward system to add your own properties and behaviours, all handled in one script. Also easy to just ignore.
+- Quest System
+- Save and Load System as well as scene persistency
+- Full gamepad support!
+- Fully featured Demo Scene
+  - Set up like a game level including a variety of objects, weapons and quests
+  - In-game helper documents that explain how objects in the scene were set up
 
-If you make a cool game with this addon, I would love to hear about it!
+> [!IMPORTANT]  
+> COGITO is still under active development. While some features are pretty much set, others might change. Use at your own risk and check Issues and Discussion pages for more information.
 
-# Wiki
-**To start out**, you should probably remap all of the movement keys to your own control set.
+## [Full documentation here!](https://cogito.readthedocs.io/en/latest/index.html)
 
-You can make this a super basic controller by just disabling everything.
-
-**How to add controller/GamePad support**  
-- In the controls export group, there is a commented section at the end that says "Uncomment this if you want full controller support". Uncomment that block.
-- Make a key map for each direction (left, right, up, down) and map them to your joystick.
-- Write in these keymaps in the controls section of the player settings.
-- In the `handle_head_rotation` function, there is another block of commented code that says the same thing. Uncomment that too.
-- You should now be able to look around with the joystick. Make sure you add the other controls to the input map. (movement, jumping, crouching, sprinting, etc.)
-
-**How to change settings:**  
-Click on the character node and there should be settings in the "Feature Settings" group.
-
-**How to add animations for a mesh:**  
-- Create a function for your animation and attach it to `_physics_process` to call it every frame.
-- Use `input_dir` as a boolean (it is actually a `Vector2`) to know if the player is walking.
-- Use the `state` member variable to tell if the player is sprinting or crouching.
-- Use the `is_on_floor` function to tell if the player is standing or falling.
-
-**How to change reticles (crosshairs):**  
-Change the "Default Reticle" setting to your reticle file.  
-During runtime:  
-Use the `change_reticle` function on the character.
-
-**How to create a new reticle:**  
-- Choose a reticle to base it off of.
-- Open that reticle and save it as a new reticle.
-- Remove the script from the reticle and create a new one. (for some reason you have to do this)
-- Edit the reticle to your needs.
-- Follow the "how to change reticles" directions to use it.
-
-**How to use the editor tools:**  
-- Enable editable children on the `CharacterBody` node
-- Use the options in the Properties tab to change things
-- These changes apply in runtime as well
+[Credits, Contributors and License](https://cogito.readthedocs.io/en/latest/about.html)

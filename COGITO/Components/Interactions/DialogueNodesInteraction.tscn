@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://c33aod2r6mxf6"]
+
+[ext_resource type="Script" path="res://COGITO/Components/Interactions/DialogueNodesInteraction.gd" id="1_66yfh"]
+
+[sub_resource type="Resource" id="Resource_0k18x"]
+metadata/__load_path__ = "res://DN_TestDialogue.tres"
+
+[sub_resource type="Resource" id="Resource_blnbd"]
+metadata/__load_path__ = "res://addons/dialogue_nodes/themes/bubblyClean.theme"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_18s5n"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_qqvse"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_8q1en"]
+
+[sub_resource type="Resource" id="Resource_iwvmf"]
+metadata/__load_path__ = "res://addons/dialogue_nodes/objects/DialogueBubble.gd"
+
+[node name="DialogueNodesInteraction" type="Node3D"]
+script = ExtResource("1_66yfh")
+dialogue_data = SubResource("Resource_0k18x")
+input_map_action = "interact"
+interaction_text = "Talk"
+
+[node name="DialogueBubble" type="RichTextLabel" parent="." node_paths=PackedStringArray("follow_node")]
+clip_contents = false
+offset_right = 140.0
+offset_bottom = 23.0
+theme = SubResource("Resource_blnbd")
+bbcode_enabled = true
+text = "Sample dialogue."
+fit_content = true
+autowrap_mode = 0
+custom_effects = [SubResource("RichTextEffect_18s5n"), SubResource("RichTextEffect_qqvse"), SubResource("RichTextEffect_8q1en")]
+script = SubResource("Resource_iwvmf")
+follow_node = NodePath("..")
+dialogue_custom_effects = [SubResource("RichTextEffect_18s5n"), SubResource("RichTextEffect_qqvse"), SubResource("RichTextEffect_8q1en")]
