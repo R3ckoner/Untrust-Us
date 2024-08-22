@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://j26q5354kob1"]
+
+[ext_resource type="BoxMesh" uid="uid://cymkd6hil0mh8" path="res://plantingsoil.tres" id="1_45obu"]
+[ext_resource type="Material" uid="uid://ce3eegglpwds3" path="res://retro_nature_pack/textures/bushes/bush6.tres" id="2_kpm2o"]
+[ext_resource type="ArrayMesh" uid="uid://b8fddwanoimys" path="res://retro_nature_pack/models/OBJ/bushes/bush06.obj" id="3_eqsvn"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Plantingsoil" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.725091, 1.19209e-07, -0.742404)
+mesh = ExtResource("1_45obu")
+
+[node name="Bush06" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.794896, 0, 2.10672)
+material_override = ExtResource("2_kpm2o")
+mesh = ExtResource("3_eqsvn")

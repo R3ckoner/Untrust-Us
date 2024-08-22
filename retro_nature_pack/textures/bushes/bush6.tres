@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ce3eegglpwds3"]
+
+[ext_resource type="Texture2D" uid="uid://cw4y80addq141" path="res://retro_nature_pack/textures/bushes/bush6_spring3.png" id="1_pjqap"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_pjqap")
