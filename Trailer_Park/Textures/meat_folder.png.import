@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdngi0xs7bjwb"
-path.s3tc="res://.godot/imported/meat_folder.png-41189ef62edc0ba797818ec2bf7ae26c.s3tc.ctex"
+path.s3tc="res://.godot/imported/meat_folder.png-1cfbc8b1b4fca092835e3eaeec2b9300.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/meat_folder.png"
-dest_files=["res://.godot/imported/meat_folder.png-41189ef62edc0ba797818ec2bf7ae26c.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/meat_folder.png"
+dest_files=["res://.godot/imported/meat_folder.png-1cfbc8b1b4fca092835e3eaeec2b9300.s3tc.ctex"]
 
 [params]
 

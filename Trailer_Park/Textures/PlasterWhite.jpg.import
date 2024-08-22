@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ycyrd6j1nail"
-path.s3tc="res://.godot/imported/PlasterWhite.jpg-c67e3e3ab46ef1d741812990d8d05f99.s3tc.ctex"
+path.s3tc="res://.godot/imported/PlasterWhite.jpg-e073eb7f29664c0cfd58867ec9a1e905.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/PlasterWhite.jpg"
-dest_files=["res://.godot/imported/PlasterWhite.jpg-c67e3e3ab46ef1d741812990d8d05f99.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/PlasterWhite.jpg"
+dest_files=["res://.godot/imported/PlasterWhite.jpg-e073eb7f29664c0cfd58867ec9a1e905.s3tc.ctex"]
 
 [params]
 

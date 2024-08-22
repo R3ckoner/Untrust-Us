@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nf1jghexea10"
-path.s3tc="res://.godot/imported/Wood.jpg-7a5c9a0037719a9f0f23c357929a0d58.s3tc.ctex"
+path.s3tc="res://.godot/imported/Wood.jpg-713e1a0df804cc9ebe52798c19c5bdcd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Wood.jpg"
-dest_files=["res://.godot/imported/Wood.jpg-7a5c9a0037719a9f0f23c357929a0d58.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Wood.jpg"
+dest_files=["res://.godot/imported/Wood.jpg-713e1a0df804cc9ebe52798c19c5bdcd.s3tc.ctex"]
 
 [params]
 

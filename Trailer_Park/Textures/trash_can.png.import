@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hxjegcvqldgj"
-path.s3tc="res://.godot/imported/trash_can.png-e5a1b53d66dc2bba6b7ba6760472ae9e.s3tc.ctex"
+path.s3tc="res://.godot/imported/trash_can.png-6f4ad8c8d3f3bebc4f5416ff66bd5fed.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/trash_can.png"
-dest_files=["res://.godot/imported/trash_can.png-e5a1b53d66dc2bba6b7ba6760472ae9e.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/trash_can.png"
+dest_files=["res://.godot/imported/trash_can.png-6f4ad8c8d3f3bebc4f5416ff66bd5fed.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfqlpwyqxc7h2"
-path.s3tc="res://.godot/imported/Metal_Fence.png-32e671779854b37786084934f5db27bd.s3tc.ctex"
+path.s3tc="res://.godot/imported/Metal_Fence.png-636de5f4bb7026ff018278c3d2770ced.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Metal_Fence.png"
-dest_files=["res://.godot/imported/Metal_Fence.png-32e671779854b37786084934f5db27bd.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Metal_Fence.png"
+dest_files=["res://.godot/imported/Metal_Fence.png-636de5f4bb7026ff018278c3d2770ced.s3tc.ctex"]
 
 [params]
 

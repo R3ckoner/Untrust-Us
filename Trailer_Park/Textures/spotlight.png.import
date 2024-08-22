@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b31gjjemd0eqe"
-path.s3tc="res://.godot/imported/spotlight.png-cc33f712a50e2a61084c0a6a0b3d9c72.s3tc.ctex"
+path.s3tc="res://.godot/imported/spotlight.png-cab1d1f1c39d8fe8ab3b4e34100bf235.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/spotlight.png"
-dest_files=["res://.godot/imported/spotlight.png-cc33f712a50e2a61084c0a6a0b3d9c72.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/spotlight.png"
+dest_files=["res://.godot/imported/spotlight.png-cab1d1f1c39d8fe8ab3b4e34100bf235.s3tc.ctex"]
 
 [params]
 

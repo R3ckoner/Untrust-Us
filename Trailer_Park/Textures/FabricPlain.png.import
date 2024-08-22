@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkhapupt4tx5h"
-path.s3tc="res://.godot/imported/FabricPlain.png-5c3cdeb1431946fba05cc7c202b064de.s3tc.ctex"
+path.s3tc="res://.godot/imported/FabricPlain.png-96ab453b085d92847380d3aecc20f288.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/FabricPlain.png"
-dest_files=["res://.godot/imported/FabricPlain.png-5c3cdeb1431946fba05cc7c202b064de.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/FabricPlain.png"
+dest_files=["res://.godot/imported/FabricPlain.png-96ab453b085d92847380d3aecc20f288.s3tc.ctex"]
 
 [params]
 

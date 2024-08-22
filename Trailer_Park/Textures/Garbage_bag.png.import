@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4ne8jadystop"
-path.s3tc="res://.godot/imported/Garbage_bag.png-b6ecf674eab580fa201ada63c4663904.s3tc.ctex"
+path.s3tc="res://.godot/imported/Garbage_bag.png-a3b65fc1f5d58de43e14c5f0a516f4b1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Garbage_bag.png"
-dest_files=["res://.godot/imported/Garbage_bag.png-b6ecf674eab580fa201ada63c4663904.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Garbage_bag.png"
+dest_files=["res://.godot/imported/Garbage_bag.png-a3b65fc1f5d58de43e14c5f0a516f4b1.s3tc.ctex"]
 
 [params]
 

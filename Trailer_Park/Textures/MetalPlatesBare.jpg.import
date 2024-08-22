@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfy1y21rl1p4m"
-path.s3tc="res://.godot/imported/MetalPlatesBare.jpg-f526008e9b2e31b62c4b287582c2971d.s3tc.ctex"
+path.s3tc="res://.godot/imported/MetalPlatesBare.jpg-36482087b92f578d8d0f1a08cd88f665.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/MetalPlatesBare.jpg"
-dest_files=["res://.godot/imported/MetalPlatesBare.jpg-f526008e9b2e31b62c4b287582c2971d.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/MetalPlatesBare.jpg"
+dest_files=["res://.godot/imported/MetalPlatesBare.jpg-36482087b92f578d8d0f1a08cd88f665.s3tc.ctex"]
 
 [params]
 

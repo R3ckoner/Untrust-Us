@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3 uid="uid://br00oqf7srlbe"]
+
+[ext_resource type="Texture2D" uid="uid://c0jvivkwxdi88" path="res://512x512/Grass/Grass_22-512x512.png" id="1_kw3ce"]
+[ext_resource type="Texture2D" uid="uid://vdekjad6pjv4" path="res://512x512/Grass/Grass_05-512x512.png" id="2_nob36"]
+[ext_resource type="Texture2D" uid="uid://bjr4xr6lf7r6n" path="res://512x512/Grass/Grass_06-512x512.png" id="3_00oca"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0tb8"]
+albedo_texture = ExtResource("1_kw3ce")
+
+[sub_resource type="BoxMesh" id="BoxMesh_ba4of"]
+size = Vector3(2, 0.01, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pq7rj"]
+albedo_texture = ExtResource("2_nob36")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8t56"]
+albedo_texture = ExtResource("3_00oca")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_m0tb8")
+mesh = SubResource("BoxMesh_ba4of")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76838, 0, 0)
+material_override = SubResource("StandardMaterial3D_pq7rj")
+mesh = SubResource("BoxMesh_ba4of")
+surface_material_override/0 = SubResource("StandardMaterial3D_h8t56")

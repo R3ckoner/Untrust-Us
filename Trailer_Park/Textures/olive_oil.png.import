@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcbd0lbhv5hl2"
-path.s3tc="res://.godot/imported/olive_oil.png-d898b2d50aa942e853504b3779c94e22.s3tc.ctex"
+path.s3tc="res://.godot/imported/olive_oil.png-6c71194002a060f2407ff8bc9073ff5b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/olive_oil.png"
-dest_files=["res://.godot/imported/olive_oil.png-d898b2d50aa942e853504b3779c94e22.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/olive_oil.png"
+dest_files=["res://.godot/imported/olive_oil.png-6c71194002a060f2407ff8bc9073ff5b.s3tc.ctex"]
 
 [params]
 

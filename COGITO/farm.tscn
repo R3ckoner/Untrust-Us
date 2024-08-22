@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://i6ax1fs81ckk"]
+[gd_scene load_steps=44 format=4 uid="uid://i6ax1fs81ckk"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_v2oq7"]
 [ext_resource type="Resource" path="res://maps/data.hterrain" id="2_10kbr"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bm6omain8du8j" path="res://512x512/Grass/Grass_03-512x512.png" id="5_h77u1"]
 [ext_resource type="Texture2D" uid="uid://c0jvivkwxdi88" path="res://512x512/Grass/Grass_22-512x512.png" id="6_8tkde"]
 [ext_resource type="Texture2D" uid="uid://bylrgjm5uqhf6" path="res://512x512/Grass/Grass_12-512x512.png" id="7_x15qb"]
+[ext_resource type="PackedScene" uid="uid://b6n63cqa0sm6f" path="res://COGITO/Components/grid_map.tscn" id="8_1vmrx"]
 [ext_resource type="PackedScene" uid="uid://kicjwmh02uwf" path="res://COGITO/PackedScenes/cogito_player.tscn" id="10_fyuwy"]
 [ext_resource type="Script" path="res://COGITO/InventoryPD/CustomResources/InventorySlotPD.gd" id="11_ukr8j"]
 [ext_resource type="Script" path="res://COGITO/InventoryPD/cogito_inventory.gd" id="12_aaoie"]
@@ -25,9 +26,9 @@
 [ext_resource type="Resource" uid="uid://b84u4bpgovhcn" path="res://SettlingIn.tres" id="22_khfre"]
 [ext_resource type="PackedScene" uid="uid://cwd3g16ep0idw" path="res://COGITO/PackedScenes/Pickups/pickup_flashlight.tscn" id="24_1db75"]
 [ext_resource type="PackedScene" uid="uid://o0xgl5obc551" path="res://COGITO/PackedScenes/Pickups/pickup_pistol.tscn" id="25_ld4me"]
-[ext_resource type="AudioStream" uid="uid://uafoym4hwklm" path="res://Ocean Surf - Relax With 10 Minutes Pebble Beach With Ocean Sounds.wav" id="26_vjvb0"]
 [ext_resource type="Material" uid="uid://u8bnrf3pdcly" path="res://clouds.tres" id="27_4c1ti"]
 [ext_resource type="AudioStream" uid="uid://4gvn42sur4p8" path="res://crc.wav" id="27_d7jpb"]
+[ext_resource type="PackedScene" uid="uid://cgce75ts2twkp" path="res://COGITO/PackedScenes/Pickups/pickup_pickaxe.tscn" id="29_2uoxx"]
 
 [sub_resource type="Resource" id="Resource_esi65"]
 script = ExtResource("3_wo0fe")
@@ -164,8 +165,10 @@ shader_params/u_globalmap_blend_start = null
 shader_params/u_globalmap_blend_distance = null
 shader_params/u_colormap_opacity_per_texture = null
 
+[node name="GridMap" parent="." instance=ExtResource("8_1vmrx")]
+
 [node name="CogitoPlayer" parent="." instance=ExtResource("10_fyuwy")]
-transform = Transform3D(-1.47575, 0, 0.268615, 0, 1.5, 0, -0.268615, 0, -1.47575, 431.475, 14.3496, 425.295)
+transform = Transform3D(-1.47575, 0, 0.268615, 0, 1.5, 0, -0.268615, 0, -1.47575, 431.47, 14.2435, 425.289)
 inventory_data = SubResource("Resource_7x0ki")
 sprint_footstep_interval = 0.01
 WALKING_SPEED = 50.0
@@ -357,7 +360,6 @@ transform = Transform3D(0.833333, 0, 0, 0, 0.81993, -0.148859, 0, 0.148859, 0.81
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 438.052, 0, 933.978)
-stream = ExtResource("26_vjvb0")
 volume_db = 23.063
 max_db = 6.0
 autoplay = true
@@ -380,6 +382,10 @@ mesh = SubResource("PlaneMesh_yqthr")
 transform = Transform3D(-0.599798, 0.781733, 0.0798592, -0.244107, -0.106667, -0.998008, -0.716395, -0.618156, 0.273204, 26.9133, 72.4002, 1075.39)
 material_override = ExtResource("27_4c1ti")
 mesh = SubResource("PlaneMesh_yqthr")
+
+[node name="Pickup_Pickaxe" parent="." instance=ExtResource("29_2uoxx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 433.474, 18.7064, 446.988)
+mass = 10.0
 
 [connection signal="body_entered" from="house22/Archive_QuestEnder" to="house22/Archive_QuestEnder" method="_on_body_entered"]
 [connection signal="body_entered" from="Car32/Settling In Start" to="Car32/Settling In Start" method="_on_body_entered"]

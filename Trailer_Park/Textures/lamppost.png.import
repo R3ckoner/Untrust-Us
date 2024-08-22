@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c65h2sdg3rbcj"
-path.s3tc="res://.godot/imported/lamppost.png-ec19ed9b1692b997c8a008614c2ac449.s3tc.ctex"
+path.s3tc="res://.godot/imported/lamppost.png-88f92c1d5f12a5a18264bd28585d2d5a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/lamppost.png"
-dest_files=["res://.godot/imported/lamppost.png-ec19ed9b1692b997c8a008614c2ac449.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/lamppost.png"
+dest_files=["res://.godot/imported/lamppost.png-88f92c1d5f12a5a18264bd28585d2d5a.s3tc.ctex"]
 
 [params]
 

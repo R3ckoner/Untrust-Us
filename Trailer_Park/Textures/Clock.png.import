@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jfdyp7bb1qwn"
-path.s3tc="res://.godot/imported/Clock.png-1a9ec1b5feab5e05f0fd29b05912e836.s3tc.ctex"
+path.s3tc="res://.godot/imported/Clock.png-ab56ff276ae99668ddce5f1785b30e63.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Clock.png"
-dest_files=["res://.godot/imported/Clock.png-1a9ec1b5feab5e05f0fd29b05912e836.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Clock.png"
+dest_files=["res://.godot/imported/Clock.png-ab56ff276ae99668ddce5f1785b30e63.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3sj3ohj7gjvr"
-path.s3tc="res://.godot/imported/Champoo_01.png-408064c2c62e100b1310fdf06f5daed4.s3tc.ctex"
+path.s3tc="res://.godot/imported/Champoo_01.png-3ebaf081bf6b9c3fec6a85176f9206e3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Champoo_01.png"
-dest_files=["res://.godot/imported/Champoo_01.png-408064c2c62e100b1310fdf06f5daed4.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Champoo_01.png"
+dest_files=["res://.godot/imported/Champoo_01.png-3ebaf081bf6b9c3fec6a85176f9206e3.s3tc.ctex"]
 
 [params]
 

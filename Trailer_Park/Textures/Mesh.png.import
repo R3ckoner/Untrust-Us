@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgtwb5t0sfg3c"
-path.s3tc="res://.godot/imported/Mesh.png-90824fabb713579da93cc944ab95abd3.s3tc.ctex"
+path.s3tc="res://.godot/imported/Mesh.png-c99d17854e97fed8d51ef5c4031d0f79.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Mesh.png"
-dest_files=["res://.godot/imported/Mesh.png-90824fabb713579da93cc944ab95abd3.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Mesh.png"
+dest_files=["res://.godot/imported/Mesh.png-c99d17854e97fed8d51ef5c4031d0f79.s3tc.ctex"]
 
 [params]
 

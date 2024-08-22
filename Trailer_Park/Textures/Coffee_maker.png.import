@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk1tquoitgor8"
-path.s3tc="res://.godot/imported/Coffee_maker.png-987b8efd8db8f331f2bc053f70c8a705.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffee_maker.png-66647cc8ccaa1423b0cd5eabc42e8f19.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Coffee_maker.png"
-dest_files=["res://.godot/imported/Coffee_maker.png-987b8efd8db8f331f2bc053f70c8a705.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Coffee_maker.png"
+dest_files=["res://.godot/imported/Coffee_maker.png-66647cc8ccaa1423b0cd5eabc42e8f19.s3tc.ctex"]
 
 [params]
 

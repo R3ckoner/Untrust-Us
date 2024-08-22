@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddjfyhx42rvj"
-path.s3tc="res://.godot/imported/TilesSmall_01.jpg-1ba4b79552f903bc27c3109414d98030.s3tc.ctex"
+path.s3tc="res://.godot/imported/TilesSmall_01.jpg-7c9df6e74f404e2c9c607d48c768a15a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/TilesSmall_01.jpg"
-dest_files=["res://.godot/imported/TilesSmall_01.jpg-1ba4b79552f903bc27c3109414d98030.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/TilesSmall_01.jpg"
+dest_files=["res://.godot/imported/TilesSmall_01.jpg-7c9df6e74f404e2c9c607d48c768a15a.s3tc.ctex"]
 
 [params]
 

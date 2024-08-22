@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btrqwb0rvhb55"
-path.s3tc="res://.godot/imported/washbasin.png-3f9d66cf62185d2e9cd01c16970d2576.s3tc.ctex"
+path.s3tc="res://.godot/imported/washbasin.png-768eff3bb528885689e207b03df1b664.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/washbasin.png"
-dest_files=["res://.godot/imported/washbasin.png-3f9d66cf62185d2e9cd01c16970d2576.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/washbasin.png"
+dest_files=["res://.godot/imported/washbasin.png-768eff3bb528885689e207b03df1b664.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nmyv3rjc4wps"
-path.s3tc="res://.godot/imported/Cookware.png-255ef59bc7f2d4736fe0b73d74beb72e.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cookware.png-8c4b359475e987aadd7b80fb73066527.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Cookware.png"
-dest_files=["res://.godot/imported/Cookware.png-255ef59bc7f2d4736fe0b73d74beb72e.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Cookware.png"
+dest_files=["res://.godot/imported/Cookware.png-8c4b359475e987aadd7b80fb73066527.s3tc.ctex"]
 
 [params]
 

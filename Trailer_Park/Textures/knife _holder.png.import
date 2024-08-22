@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk2t6dwhejd24"
-path.s3tc="res://.godot/imported/knife _holder.png-307733ca2f0986e2e82483a8533fe490.s3tc.ctex"
+path.s3tc="res://.godot/imported/knife _holder.png-a6dcd30ca09fe63eeac7c52a306ce9e3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/knife _holder.png"
-dest_files=["res://.godot/imported/knife _holder.png-307733ca2f0986e2e82483a8533fe490.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/knife _holder.png"
+dest_files=["res://.godot/imported/knife _holder.png-a6dcd30ca09fe63eeac7c52a306ce9e3.s3tc.ctex"]
 
 [params]
 

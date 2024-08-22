@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7y2hq2skm6nv"]
+
+[ext_resource type="PackedScene" uid="uid://i6ax1fs81ckk" path="res://COGITO/farm.tscn" id="1_ahgf0"]
+[ext_resource type="Script" path="res://COGITO/InventoryPD/CustomResources/InventorySlotPD.gd" id="2_l47qb"]
+[ext_resource type="Script" path="res://COGITO/InventoryPD/cogito_inventory.gd" id="3_sawce"]
+
+[sub_resource type="Resource" id="Resource_7x0ki"]
+resource_local_to_scene = true
+script = ExtResource("3_sawce")
+grid = true
+starter_inventory = Array[ExtResource("2_l47qb")]([])
+inventory_size = Vector2i(5, 3)
+inventory_slots = Array[ExtResource("2_l47qb")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+
+[node name="HTerrain" instance=ExtResource("1_ahgf0")]
+
+[node name="CogitoPlayer" parent="." index="1"]
+inventory_data = SubResource("Resource_7x0ki")

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnpkg1atijtiy"
-path.s3tc="res://.godot/imported/Clothings.png-92d2308f9a7e2e0b02876420c099fb67.s3tc.ctex"
+path.s3tc="res://.godot/imported/Clothings.png-de45f7607c9a101181cd144b2d0c29fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Clothings.png"
-dest_files=["res://.godot/imported/Clothings.png-92d2308f9a7e2e0b02876420c099fb67.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Clothings.png"
+dest_files=["res://.godot/imported/Clothings.png-de45f7607c9a101181cd144b2d0c29fa.s3tc.ctex"]
 
 [params]
 

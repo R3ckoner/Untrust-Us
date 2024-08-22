@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clgrwucqgwjlq"
-path.s3tc="res://.godot/imported/Antenna.png-3535a55f2b232de8b8235e26bb7bad2c.s3tc.ctex"
+path.s3tc="res://.godot/imported/Antenna.png-0b71b8e7507a212163d8d4df5e6d828f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Antenna.png"
-dest_files=["res://.godot/imported/Antenna.png-3535a55f2b232de8b8235e26bb7bad2c.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Antenna.png"
+dest_files=["res://.godot/imported/Antenna.png-0b71b8e7507a212163d8d4df5e6d828f.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd0rimxqkfar8"
-path.s3tc="res://.godot/imported/alarm_clock_01.png-b6358bf770e5af3a2b0a2ad718f85f89.s3tc.ctex"
+path.s3tc="res://.godot/imported/alarm_clock_01.png-129f137e1a05615a791e699648dea560.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/alarm_clock_01.png"
-dest_files=["res://.godot/imported/alarm_clock_01.png-b6358bf770e5af3a2b0a2ad718f85f89.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/alarm_clock_01.png"
+dest_files=["res://.godot/imported/alarm_clock_01.png-129f137e1a05615a791e699648dea560.s3tc.ctex"]
 
 [params]
 

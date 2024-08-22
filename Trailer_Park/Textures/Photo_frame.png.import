@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfct6h4h5t8p7"
-path.s3tc="res://.godot/imported/Photo_frame.png-8ccf2ccff2b99827470afe81a2efacf8.s3tc.ctex"
+path.s3tc="res://.godot/imported/Photo_frame.png-1304f259dba9ecb2b0f6690007584e99.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Photo_frame.png"
-dest_files=["res://.godot/imported/Photo_frame.png-8ccf2ccff2b99827470afe81a2efacf8.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Photo_frame.png"
+dest_files=["res://.godot/imported/Photo_frame.png-1304f259dba9ecb2b0f6690007584e99.s3tc.ctex"]
 
 [params]
 

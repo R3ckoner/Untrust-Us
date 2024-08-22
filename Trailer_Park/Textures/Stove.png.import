@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btice6407af3n"
-path.s3tc="res://.godot/imported/Stove.png-784ae190cbf903112d81663d1ec10fbc.s3tc.ctex"
+path.s3tc="res://.godot/imported/Stove.png-abf8627716a228e1a560357b11c3551d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Stove.png"
-dest_files=["res://.godot/imported/Stove.png-784ae190cbf903112d81663d1ec10fbc.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Stove.png"
+dest_files=["res://.godot/imported/Stove.png-abf8627716a228e1a560357b11c3551d.s3tc.ctex"]
 
 [params]
 

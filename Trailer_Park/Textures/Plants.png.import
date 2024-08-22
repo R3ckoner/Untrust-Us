@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ovnej14qhcp"
-path.s3tc="res://.godot/imported/Plants.png-9a5679e3ee670b3119f833d70ee1f974.s3tc.ctex"
+path.s3tc="res://.godot/imported/Plants.png-62d0cfd63a9abfe51f636be003746976.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Plants.png"
-dest_files=["res://.godot/imported/Plants.png-9a5679e3ee670b3119f833d70ee1f974.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Plants.png"
+dest_files=["res://.godot/imported/Plants.png-62d0cfd63a9abfe51f636be003746976.s3tc.ctex"]
 
 [params]
 

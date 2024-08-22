@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn8ir65umwdbo"
-path.s3tc="res://.godot/imported/Skillet.png-7964c2ba06c7b45f8632789b794293a7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Skillet.png-d341366ccc1102f4f3693a6cb4d43188.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Skillet.png"
-dest_files=["res://.godot/imported/Skillet.png-7964c2ba06c7b45f8632789b794293a7.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Skillet.png"
+dest_files=["res://.godot/imported/Skillet.png-d341366ccc1102f4f3693a6cb4d43188.s3tc.ctex"]
 
 [params]
 

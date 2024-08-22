@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpa7gswla63ox"
-path.s3tc="res://.godot/imported/soap.png-098b424ef18e910d5dd4e4ba4c47571a.s3tc.ctex"
+path.s3tc="res://.godot/imported/soap.png-189abc48db3f651ceb80e31e48cfc32d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/soap.png"
-dest_files=["res://.godot/imported/soap.png-098b424ef18e910d5dd4e4ba4c47571a.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/soap.png"
+dest_files=["res://.godot/imported/soap.png-189abc48db3f651ceb80e31e48cfc32d.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byevlj8d3nnk4"
-path.s3tc="res://.godot/imported/Armchair.png-c482c6b7ee8d0c709213584a2a866038.s3tc.ctex"
+path.s3tc="res://.godot/imported/Armchair.png-690904a8fded54a8490fc96aea1cdeb3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Armchair.png"
-dest_files=["res://.godot/imported/Armchair.png-c482c6b7ee8d0c709213584a2a866038.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Armchair.png"
+dest_files=["res://.godot/imported/Armchair.png-690904a8fded54a8490fc96aea1cdeb3.s3tc.ctex"]
 
 [params]
 

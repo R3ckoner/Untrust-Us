@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://en0f8y1qxiec"
-path.s3tc="res://.godot/imported/Fuse_box.png-b960b4f5abcd01e667b58fb024d89575.s3tc.ctex"
+path.s3tc="res://.godot/imported/Fuse_box.png-a33d4d1a95098f08bf0041b31a99be65.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/Fuse_box.png"
-dest_files=["res://.godot/imported/Fuse_box.png-b960b4f5abcd01e667b58fb024d89575.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/Fuse_box.png"
+dest_files=["res://.godot/imported/Fuse_box.png-a33d4d1a95098f08bf0041b31a99be65.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drn6sxofho867"
-path.s3tc="res://.godot/imported/TilesPlain.jpg-e13d7cc03f41b1228e48116d1f59ea35.s3tc.ctex"
+path.s3tc="res://.godot/imported/TilesPlain.jpg-2157ee0cf021394ab5b0a65909fec371.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Trailer_Park/textures/TilesPlain.jpg"
-dest_files=["res://.godot/imported/TilesPlain.jpg-e13d7cc03f41b1228e48116d1f59ea35.s3tc.ctex"]
+source_file="res://Trailer_Park/Textures/TilesPlain.jpg"
+dest_files=["res://.godot/imported/TilesPlain.jpg-2157ee0cf021394ab5b0a65909fec371.s3tc.ctex"]
 
 [params]
 
