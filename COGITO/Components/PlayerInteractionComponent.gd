@@ -270,6 +270,12 @@ func till_soil_at_position(world_position: Vector3):
 	if grid_map:
 		# Convert world coordinates to local space first
 		var local_position = grid_map.to_local(world_position)
+		
+		# Snap local position to the nearest grid point to ensure alignment
+		local_position.x = round(local_position.x / grid_map.cell_size.x) * grid_map.cell_size.x
+		local_position.y = 0  # Ensure it's flat on the grid
+		local_position.z = round(local_position.z / grid_map.cell_size.z) * grid_map.cell_size.z
+		
 		# Convert local position to grid coordinates
 		var grid_coords = grid_map.local_to_map(local_position)
 		var current_item = grid_map.get_cell_item(grid_coords)
