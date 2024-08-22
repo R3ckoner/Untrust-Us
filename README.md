@@ -4,18 +4,32 @@
 
 ## About the Game
 
-**Untrust Us** is a retro-style first-person horror game set in the eerie wilderness of the Pacific Northwest. Drawing inspiration from classic PS1-era games, "Untrust Us" combines low-poly graphics with a dark and foreboding atmosphere, creating a tense and immersive experience that will keep players on the edge of their seats.
+**Untrust Us** is a unique blend of farming simulation and survival horror, set in the haunting wilderness of the Pacific Northwest. Inspired by classic PS1-era graphics, the game delivers a nostalgic experience with a fresh twist. By day, you'll tend to your farm, growing crops and crafting items to aid your survival. But as night falls, the atmosphere shifts to a Quake-style first-person horror experience where your daytime efforts are put to the test.
+
+### Gameplay Overview
+
+In **Untrust Us**, you will face two distinct gameplay phases:
+
+1. **Daytime - Farming and Preparation:**
+   - **Cultivate Your Farm:** Grow crops, raise livestock, and gather resources to craft essential items.
+   - **Crafting and Inventory Management:** Use the resources you gather to create weapons, tools, and defenses that will help you survive the night.
+   - **Explore and Expand:** Expand your farm, unlock new areas, and discover secrets hidden in the daylight.
+
+2. **Nighttime - Survival Horror:**
+   - **Quake-Style FPS Combat:** As night falls, the game transforms into a tense first-person shooter. Defend your farm from unknown horrors lurking in the dark.
+   - **Use Your Daytime Preparations:** The items and weapons you crafted during the day will be crucial in your fight for survival at night. Every decision made during the day affects your chances of surviving the night.
+   - **Atmospheric Horror:** The night brings a shift in tone, with low visibility, eerie sounds, and a relentless downpour that will keep you on edge.
 
 ### Story
 
-You arrive at an isolated farm in the middle of the night, surrounded by mountains and dense forest. The rain pours down relentlessly as you explore the seemingly deserted property. But as you dig deeper, you begin to unravel a mystery that suggests you may not be alone. In "Untrust Us," the environment itself is your enemy, and survival depends on your ability to remain cautious and vigilant.
+You inherit a seemingly peaceful farm, but all is not as it seems. During the day, everything appears normal, and you work the land like any other farmer. But when the sun sets, the environment changes, and an ancient evil stirs. You'll need to balance farming and crafting with intense survival tactics to uncover the mysteries of the farm and protect yourself from the night terrors.
 
 ### Features
 
-- **Retro Graphics**: Experience the game in a visually nostalgic style, reminiscent of the 90s PS1 era, with low-poly models and pixelated textures.
-- **Atmospheric Horror**: Explore a mysterious farm at night, where the darkness, fog, and rain create an unsettling ambiance.
-- **Immersive Soundtrack**: A haunting and minimalistic soundtrack that enhances the game's tension and atmosphere.
-- **Exploration and Survival**: Uncover the secrets of the farm, manage your resources, and make it through the night.
+- **Day/Night Cycle:** Experience two distinct gameplay modes in a single game. Farm by day, survive by night.
+- **Retro Graphics:** A visually nostalgic experience inspired by PS1-era games, with low-poly models and pixelated textures.
+- **Dynamic Crafting System:** Craft weapons, tools, and defenses during the day to use against the horrors of the night.
+- **Immersive Atmosphere:** Explore a dark, rainy environment with atmospheric sound design that intensifies as the day turns to night.
 
 ### Screenshot
 
