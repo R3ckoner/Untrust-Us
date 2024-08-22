@@ -1,51 +1,31 @@
-![COGITO_banner](docs/Cogito_capsule_202402_jpg.jpg)
-# COGITO
-[![GodotEngine](https://img.shields.io/badge/Godot_4.2.1_stable-blue?logo=godotengine&logoColor=white)](https://godotengine.org/) [![COGITO](https://img.shields.io/badge/beta_202408-35A1D7?label=COGITO&labelColor=0E887A)](https://github.com/Phazorknight/Cogito)
-beta 202408.01
+# Untrust Us
 
-## What is it?
-COGITO is a first Person Immersive Sim Template Project for Godot Engine 4.
-In comparison to other first person assets out there, which focus mostly on shooter mechanics, COGITO focuses on
-providing a framework for creating interactable objects and items.
+![Untrust Us](./assets/screenshot.jpeg)
 
-COGITO is made by [Philip Drobar](https://www.philipdrobar.com) with help from [these contributors](https://github.com/Phazorknight/Cogito/graphs/contributors).
+## About the Game
 
-## Principles of this template
-The structure of this template always tries to adhere to the following principles:
-- **Complete**: When you download COGITO and press play, you get a functioning project out of the box. Game menu, save slot select, options and a playable level are all included.
-- **Versatile**: Wether your game is set in the future, the past or the present, use melee, projectile or no weapons at all, have low poly, stylized or realistic graphics, the template will have features for you.
-- **Modular**: Do not want to use a feature? You will be able to hide it, ignore it or strip it out without breaking COGITO. At the same time, COGITO is designed to be extendable with your own custom features or other add-ons.
-- **Approachable**: While there will always be a learning curve, we strive to make COGTIO approachable and intuitive to use, so it doesn't get in your way of making your game.
+**Untrust Us** is a retro-style first-person horror game set in the eerie wilderness of the Pacific Northwest. Drawing inspiration from classic PS1-era games, "Untrust Us" combines low-poly graphics with a dark and foreboding atmosphere, creating a tense and immersive experience that will keep players on the edge of their seats.
 
-## Current Features
-- First person player controller with:
-  - Sprinting, jumping, crouching, sliding, stairs handling, ladder handling
-  - Fully customizable attributes like Health, Stamina, Visibility (for stealth) - Component-based, so easy to add your own.
-  - Lots of exposed properties to tweak to your liking (speeds, headbob, fall damage, bunnyhop, etc.)
-  - Easy-to-use dynamic footstep sound system
-- Inventory System
-  - Flexible resource-based inventories
-  - Inventory UI separate from inventory logic
-  - Examples for multiple item types (consumables, keys, ammo, weapons, combinable Items)
-  - Base class to easily add your custom item types
-  - Slot-based (Minecraft) or grid-based (Resident Evil 4), the choice is yours!
-- Interaction System
-  - Component-based interactions makes it easy to turn your own objects interactive quickly and customize existing ones
-  - Examples for interactive objects like doors, drawers, carryables, turn-wheels, elevators, readable objects, keypads
-- Systemic Properties
-  - Give objects properties like "FLAMMABLE" or "WET" and they will interact with each other depending on their state and properties.
-  - For example FLAMMABLE objects can be ignited by objects that are actively on fire. Can be extinguished by objects that are WET.
-  - Straight forward system to add your own properties and behaviours, all handled in one script. Also easy to just ignore.
-- Quest System
-- Save and Load System as well as scene persistency
-- Full gamepad support!
-- Fully featured Demo Scene
-  - Set up like a game level including a variety of objects, weapons and quests
-  - In-game helper documents that explain how objects in the scene were set up
+### Story
 
-> [!IMPORTANT]  
-> COGITO is still under active development. While some features are pretty much set, others might change. Use at your own risk and check Issues and Discussion pages for more information.
+You arrive at an isolated farm in the middle of the night, surrounded by mountains and dense forest. The rain pours down relentlessly as you explore the seemingly deserted property. But as you dig deeper, you begin to unravel a mystery that suggests you may not be alone. In "Untrust Us," the environment itself is your enemy, and survival depends on your ability to remain cautious and vigilant.
 
-## [Full documentation here!](https://cogito.readthedocs.io/en/latest/index.html)
+### Features
 
-[Credits, Contributors and License](https://cogito.readthedocs.io/en/latest/about.html)
+- **Retro Graphics**: Experience the game in a visually nostalgic style, reminiscent of the 90s PS1 era, with low-poly models and pixelated textures.
+- **Atmospheric Horror**: Explore a mysterious farm at night, where the darkness, fog, and rain create an unsettling ambiance.
+- **Immersive Soundtrack**: A haunting and minimalistic soundtrack that enhances the game's tension and atmosphere.
+- **Exploration and Survival**: Uncover the secrets of the farm, manage your resources, and make it through the night.
+
+### Screenshot
+
+![Gameplay Screenshot](./assets/screenshot.jpeg)
+
+## Getting Started
+
+To play **Untrust Us**, follow these instructions:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/untrust-us.git
