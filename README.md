@@ -1,6 +1,6 @@
 # Untrust Us
 
-![Untrust Us](./assets/screenshot.jpeg)
+![Untrust Us](./screens/screen2.jpeg)
 
 ## About the Game
 
@@ -33,7 +33,7 @@ You inherit a seemingly peaceful farm, but all is not as it seems. During the da
 
 ### Screenshot
 
-![Gameplay Screenshot](./assets/screenshot.jpeg)
+![Gameplay Screenshot](./assets/screen1.jpeg)
 
 ## Getting Started
 
