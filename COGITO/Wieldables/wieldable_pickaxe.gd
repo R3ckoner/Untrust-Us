@@ -11,10 +11,15 @@ extends CogitoWieldable
 
 @export var is_hoe: bool = true  # Add a flag to indicate if this pickaxe can also act as a hoe
 @export var grid_size: float = 1.0  # Size of the grid for snapping
+@export var highlight_material: StandardMaterial3D  # Material to use for the grid highlight
+@export var highlight_size: Vector3 = Vector3(1, 1, 1)  # Size of the highlight, adjust as necessary
+@export var highlight_offset: float = 0.05  # Slight offset to avoid z-fighting
+@export var horizontal: bool = true  # Boolean to control orientation of the highlight
 
 var trigger_has_been_pressed: bool = false
 var can_till: bool = false  # Track whether tilling is allowed
 var plot_area: Area3D  # Reference to the Plot area in the scene
+var highlight_instance: MeshInstance3D  # Instance for the highlight mesh
 
 func _ready():
     print("Pickaxe ready. Setting up...")
@@ -33,6 +38,7 @@ func _ready():
     else:
         push_error("Plot area (Area3D) not found in the scene!")
 
+    _create_highlight_instance()
     set_process(true)
 
 func _find_plot_area() -> Area3D:
@@ -44,6 +50,21 @@ func _find_plot_area() -> Area3D:
         if plot_node:
             return plot_node
     return null
+
+func _create_highlight_instance():
+    highlight_instance = MeshInstance3D.new()
+    highlight_instance.mesh = QuadMesh.new()  # Use a QuadMesh to act as the highlight
+    highlight_instance.mesh.size = Vector2(grid_size, grid_size)  # Set the size of the QuadMesh
+    highlight_instance.material_override = highlight_material
+    highlight_instance.visible = false  # Start with the highlight hidden
+
+    if horizontal:
+        highlight_instance.rotation_degrees = Vector3(-90, 0, 0)  # Rotate to lie flat if horizontal is true
+    else:
+        highlight_instance.rotation_degrees = Vector3(0, 0, 0)  # Keep it vertical if horizontal is false
+
+    add_child(highlight_instance)
+    print("Highlight instance created.")
 
 # Function to handle when the player enters the plot area
 func _on_plot_area_body_entered(body: Node):
@@ -58,6 +79,7 @@ func _on_plot_area_body_exited(body: Node):
     if body.collision_layer == trigger_layer:
         print("Player exited plot area. Tilling disabled.")
         can_till = false  # Disable tilling
+        highlight_instance.visible = false  # Hide the highlight when leaving the plot area
 
 # Primary action called by the Player Interaction Component when the pickaxe is wielded.
 func action_primary(_passed_item_reference: InventoryItemPD, _is_released: bool):
@@ -114,7 +136,16 @@ func get_target_grid_position() -> Vector3:
             floor(collision_point.z / grid_size) * grid_size + grid_size / 2
         )
 
+        # Update the highlight position and make it visible
+        highlight_instance.global_transform.origin = snapped_position + Vector3(0, highlight_offset, 0)
+        highlight_instance.visible = true
+
         return snapped_position
 
     # If no valid target is found, return the player's current position as a fallback
+    highlight_instance.visible = false  # Hide the highlight if nothing is targeted
     return CogitoSceneManager._current_player_node.global_transform.origin
+
+func _process(delta):
+    if can_till:
+        get_target_grid_position()  # Update the highlight in real-time based on where the player is looking
