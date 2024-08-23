@@ -152,7 +152,6 @@ script = ExtResource("4_ufukr")
 [node name="OptionsTabMenu" parent="ContentMain" node_paths=PackedStringArray("nodes_to_focus") instance=ExtResource("8_ig87r")]
 visible = false
 layout_mode = 2
-current_tab = 0
 nodes_to_focus = [NodePath("Gameplay/ScrollContainer/VBoxContainer/InvertYAxisCheckButton"), NodePath("Graphics/ScrollContainer/VBoxContainer/HBoxContainer_WindowMode/WindowModeOptionButton"), NodePath("Audio/ScrollContainer/VBoxContainer/MarginContainer/VBoxContainer/SFXVolumeSlider"), null]
 
 [node name="MainMenu_SaveSlotManager" type="Control" parent="."]

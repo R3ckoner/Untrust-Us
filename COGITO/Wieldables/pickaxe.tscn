@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://dxxemvynrimqw"]
+[gd_scene load_steps=11 format=4 uid="uid://dxxemvynrimqw"]
 
 [ext_resource type="Script" path="res://COGITO/Wieldables/wieldable_pickaxe.gd" id="1_hb7ed"]
 [ext_resource type="AudioStream" uid="uid://ocm2blyfthyq" path="res://COGITO/Assets/Audio/Kenney/woosh1.ogg" id="2_hp6wh"]
 [ext_resource type="AnimationLibrary" uid="uid://da3y5068fwwbq" path="res://COGITO/Animations/Wieldables/Wieldable_Pickaxe.res" id="3_cqo2g"]
 [ext_resource type="Script" path="res://COGITO/Assets/Shader/ViewmodelSpace.gd" id="4_0jrxw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f04be"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_caeak"]
 resource_name = "wood"
@@ -72,14 +74,23 @@ shadow_mesh = SubResource("ArrayMesh_1wmi8")
 [sub_resource type="BoxShape3D" id="BoxShape3D_5dkwl"]
 size = Vector3(0.2, 0.2, 0.2)
 
-[node name="Pickaxe" type="Node3D" node_paths=PackedStringArray("damage_area", "wieldable_mesh")]
+[node name="Pickaxe" type="Node3D" node_paths=PackedStringArray("damage_area")]
 transform = Transform3D(-1.81e-06, 0, 0.5, 0, 0.5, 0, -0.5, 0, -1.81e-06, 0.325805, -0.279839, -0.531526)
 top_level = true
 script = ExtResource("1_hb7ed")
 damage_area = NodePath("PickaxeMesh/DamageArea")
+trigger_layer = 1
 swing_sound = ExtResource("2_hp6wh")
-wieldable_mesh = NodePath("PickaxeMesh")
-anim_action_primary = "swing"
+is_hoe = null
+highlight_material = SubResource("StandardMaterial3D_f04be")
+highlight_size = null
+highlight_offset = null
+grid_size = null
+anim_equip = null
+anim_unequip = null
+anim_action_primary = null
+anim_action_secondary = null
+anim_reload = null
 
 [node name="PickaxeMesh" type="Node3D" parent="."]
 script = ExtResource("4_0jrxw")

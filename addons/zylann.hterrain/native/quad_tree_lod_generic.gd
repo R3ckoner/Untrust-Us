@@ -185,4 +185,3 @@ func _debug_draw_tree_recursive(ci: CanvasItem, quad: HT_QTLQuad, lod_index: int
 			chunk_indicator = 1
 		var r := Rect2(Vector2(quad.origin_x, quad.origin_y) * size, Vector2(size, size))
 		ci.draw_rect(r, Color(1.0 - lod_index * 0.2, 0.2 * checker, chunk_indicator, 1))
-
