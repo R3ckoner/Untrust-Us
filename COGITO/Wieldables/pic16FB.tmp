@@ -73,14 +73,13 @@ shadow_mesh = SubResource("ArrayMesh_1wmi8")
 size = Vector3(0.2, 0.2, 0.2)
 
 [node name="Pickaxe" type="Node3D" node_paths=PackedStringArray("damage_area")]
-transform = Transform3D(-1.81e-06, 0, 0.5, 0, 0.5, 0, -0.5, 0, -1.81e-06, 0, 0.359481, 0.0224702)
+transform = Transform3D(-1.81e-06, 0, 0.5, 0, 0.5, 0, -0.5, 0, -1.81e-06, 0, 0, 0)
 top_level = true
 script = ExtResource("1_hb7ed")
 damage_area = NodePath("PickaxeMesh/DamageArea")
 trigger_layer = 1
 swing_sound = ExtResource("2_hp6wh")
 is_hoe = null
-grid_size = null
 anim_equip = null
 anim_unequip = null
 anim_action_primary = null

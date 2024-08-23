@@ -10,6 +10,7 @@ extends CogitoWieldable
 @export var swing_sound: AudioStream
 
 @export var is_hoe: bool = true  # Add a flag to indicate if this pickaxe can also act as a hoe
+@export var grid_size: float = 1.0  # Size of the grid for snapping
 
 var trigger_has_been_pressed: bool = false
 var can_till: bool = false  # Track whether tilling is allowed
@@ -90,9 +91,30 @@ func _on_damage_area_body_entered(collider):
 
 # Method to get the grid position the player is targeting
 func get_target_grid_position() -> Vector3:
-    var raycast = CogitoSceneManager._current_player_node.player_interaction_component.interaction_raycast
-    if raycast.is_colliding():
-        return raycast.get_collision_point()
+    var camera = CogitoSceneManager._current_player_node.camera
+    var screen_center = camera.get_viewport().get_visible_rect().size / 2
+    var from = camera.project_ray_origin(screen_center)
+    var to = from + camera.project_ray_normal(screen_center) * 1000  # Cast a ray forward into the distance
+
+    var query = PhysicsRayQueryParameters3D.new()
+    query.from = from
+    query.to = to
+    query.collision_mask = trigger_layer  # Adjust this as needed
+
+    var space_state = get_world_3d().direct_space_state
+    var result = space_state.intersect_ray(query)
+
+    if result and result.has("position"):
+        var collision_point = result["position"]
+
+        # Snap the collision point to the grid
+        var snapped_position = Vector3(
+            floor(collision_point.x / grid_size) * grid_size + grid_size / 2,
+            collision_point.y,
+            floor(collision_point.z / grid_size) * grid_size + grid_size / 2
+        )
+
+        return snapped_position
 
     # If no valid target is found, return the player's current position as a fallback
     return CogitoSceneManager._current_player_node.global_transform.origin
