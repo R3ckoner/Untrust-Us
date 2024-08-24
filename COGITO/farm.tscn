@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://i6ax1fs81ckk"]
+[gd_scene load_steps=48 format=4 uid="uid://i6ax1fs81ckk"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_v2oq7"]
 [ext_resource type="Resource" path="res://maps/data.hterrain" id="2_10kbr"]
@@ -16,9 +16,7 @@
 [ext_resource type="Script" path="res://COGITO/DynamicFootstepSystem/Scripts/footstep_surface.gd" id="15_1jswb"]
 [ext_resource type="AudioStream" uid="uid://btuqyu2y70emf" path="res://COGITO/DynamicFootstepSystem/FootstepProfiles/grass_footstep_profile.tres" id="16_5h376"]
 [ext_resource type="Texture2D" uid="uid://nto17nap28b3" path="res://PSX_Forest_Level_byStarkCrafts/PSX_Forest_AssetCollection_byStarkCrafts_10.png" id="16_12um4"]
-[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_detail_layer.gd" id="16_rxutl"]
 [ext_resource type="Texture2D" uid="uid://c2mgrf67l02qs" path="res://PSX_Forest_Level_byStarkCrafts/PSX_Forest_AssetCollection_byStarkCrafts_11.png" id="17_88r5l"]
-[ext_resource type="Texture2D" uid="uid://6jmdwj3vn6m0" path="res://addons/zylann.hterrain/tools/icons/icon_detail_layer_node.svg" id="17_mskt4"]
 [ext_resource type="ArrayMesh" uid="uid://bm0nlos2yhk4g" path="res://grassmesh.res" id="19_33j6b"]
 [ext_resource type="PackedScene" uid="uid://jsf5l2i41xen" path="res://retro_house_pack/textures/house2tex.tscn" id="20_82wcy"]
 [ext_resource type="PackedScene" uid="uid://b824yav1g3xvs" path="res://Car 03/Car3.blend" id="20_i1xmb"]
@@ -30,6 +28,8 @@
 [ext_resource type="Material" uid="uid://u8bnrf3pdcly" path="res://clouds.tres" id="27_4c1ti"]
 [ext_resource type="AudioStream" uid="uid://4gvn42sur4p8" path="res://crc.wav" id="27_d7jpb"]
 [ext_resource type="PackedScene" uid="uid://cgce75ts2twkp" path="res://COGITO/PackedScenes/Pickups/pickup_pickaxe.tscn" id="29_2uoxx"]
+[ext_resource type="Script" path="res://COGITO/plot_area.gd" id="29_fbyup"]
+[ext_resource type="Texture2D" uid="uid://b8dk5vl7bq2cx" path="res://512x512/Grass/Grass_11-512x512.png" id="29_lkrtv"]
 
 [sub_resource type="Resource" id="Resource_esi65"]
 script = ExtResource("3_wo0fe")
@@ -144,8 +144,13 @@ size = Vector3(5, 3.3, 4)
 [sub_resource type="PlaneMesh" id="PlaneMesh_yqthr"]
 size = Vector2(200, 200)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_mpu3b"]
-size = Vector3(1.49329, 1, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atkld"]
+albedo_texture = ExtResource("29_lkrtv")
+
+[sub_resource type="BoxMesh" id="BoxMesh_mv55m"]
+size = Vector3(20, 0.1, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5jlg"]
 
 [node name="HTerrain" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.50407, 2.20185, -6.2001)
@@ -268,66 +273,6 @@ transform = Transform3D(-460.497, -184.063, 0.771291, -2.8903e-07, 3.88464, 509.
 mesh = SubResource("ArrayMesh_mknic")
 skeleton = NodePath("")
 
-[node name="s12" type="MeshInstance3D" parent="."]
-transform = Transform3D(-460.497, -184.063, 0.771291, -2.8903e-07, 3.88464, 509.074, -566.881, 659.696, -2.76434, 875.406, 51.3399, -6.43338)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s13" type="MeshInstance3D" parent="."]
-transform = Transform3D(-207.24, 335.468, -1.40573, -4.33749e-07, 3.88464, 509.074, 1033.19, 296.891, -1.24406, 729.949, 51.3399, 144.738)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s14" type="MeshInstance3D" parent="."]
-transform = Transform3D(-207.24, 335.468, -1.40573, -3.86572e-07, 3.88464, 509.074, 1033.19, 296.891, -1.24406, 784.753, 83.6279, 90.7358)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s15" type="MeshInstance3D" parent="."]
-transform = Transform3D(-207.24, 335.468, -1.40573, -3.86572e-07, 3.88464, 509.074, 1033.19, 296.891, -1.24406, 511.95, 81.0718, 47.3205)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s20" type="MeshInstance3D" parent="."]
-transform = Transform3D(277.222, -311.076, 1.30352, -4.63595e-07, 3.88463, 509.072, -958.065, -397.146, 1.66419, 939.432, 80.1164, 901.772)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s21" type="MeshInstance3D" parent="."]
-transform = Transform3D(415.875, 228.186, -0.956182, -1.12101e-07, 3.88465, 509.074, 702.773, -595.771, 2.49651, -125.412, 123.609, 605.014)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s22" type="MeshInstance3D" parent="."]
-transform = Transform3D(415.875, 228.186, -0.956181, -1.12101e-07, 3.88465, 509.074, 702.773, -595.771, 2.49651, -115.561, 123.609, 538.653)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s23" type="MeshInstance3D" parent="."]
-transform = Transform3D(415.875, 228.186, -0.956181, -3.86302e-07, 3.88465, 509.074, 702.773, -595.771, 2.49651, -152.4, 155.897, 471.107)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s24" type="MeshInstance3D" parent="."]
-transform = Transform3D(415.875, 228.186, -0.956181, -3.86302e-07, 3.88465, 509.074, 702.773, -595.771, 2.49651, -269.198, 153.34, 721.436)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s16" type="MeshInstance3D" parent="."]
-transform = Transform3D(-460.497, -184.063, 0.771291, -2.8903e-07, 3.88464, 509.074, -566.881, 659.696, -2.76434, 1000.54, 81.0717, -81.4128)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s17" type="MeshInstance3D" parent="."]
-transform = Transform3D(-460.497, -184.063, 0.771291, -2.8903e-07, 3.88464, 509.074, -566.881, 659.696, -2.76434, 1000.54, 81.0718, -14.3249)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
-[node name="s18" type="MeshInstance3D" parent="."]
-transform = Transform3D(-460.497, -184.063, 0.771291, -2.8903e-07, 3.88464, 509.074, -566.881, 659.696, -2.76434, 1046.9, 113.36, 47.079)
-mesh = SubResource("ArrayMesh_mknic")
-skeleton = NodePath("")
-
 [node name="Plane" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 303.626, 0.900685, 574.376)
 visible = false
@@ -341,15 +286,6 @@ cast_shadow = 0
 multimesh = SubResource("MultiMesh_i2cfm")
 script = ExtResource("15_1jswb")
 footstep_profile = ExtResource("16_5h376")
-
-[node name="HTerrainDetailLayer" type="Node3D" parent="."]
-script = ExtResource("16_rxutl")
-shader_params/u_globalmap_tint_bottom = null
-shader_params/u_globalmap_tint_top = null
-shader_params/u_bottom_ao = null
-shader_params/u_instance_scale = null
-shader_params/u_roughness = null
-metadata/_editor_icon = ExtResource("17_mskt4")
 
 [node name="Car32" parent="." instance=ExtResource("20_i1xmb")]
 transform = Transform3D(1.2, 0, 0, 0, 1.1807, 0.214357, 0, -0.214357, 1.1807, 429.236, 11.0431, 422.264)
@@ -398,12 +334,18 @@ mesh = SubResource("PlaneMesh_yqthr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 433.474, 18.7064, 446.988)
 mass = 10.0
 
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 480.188, 0, 589.752)
+material_override = SubResource("StandardMaterial3D_atkld")
+mesh = SubResource("BoxMesh_mv55m")
+
 [node name="Plot" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 526.993, -2.20185, 584.44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 481.579, -2.31493, 566.397)
+script = ExtResource("29_fbyup")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plot"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -13.0741, 0, -44.7737)
-shape = SubResource("BoxShape3D_mpu3b")
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 22.042)
+shape = SubResource("BoxShape3D_x5jlg")
 
 [connection signal="body_entered" from="house22/Archive_QuestEnder" to="house22/Archive_QuestEnder" method="_on_body_entered"]
 [connection signal="body_entered" from="Car32/Settling In Start" to="Car32/Settling In Start" method="_on_body_entered"]
