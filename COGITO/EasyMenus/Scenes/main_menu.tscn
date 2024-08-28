@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://cr3bcp0u6w1pl" path="res://COGITO/Assets/Audio/Kenney/UiAudio/mouseclick1.ogg" id="3_cfl52"]
 [ext_resource type="AudioStream" uid="uid://kbw2s407quul" path="res://COGITO/Assets/Audio/Kenney/UiAudio/click1.ogg" id="4_mhv4c"]
 [ext_resource type="Script" path="res://COGITO/Theme/CogitoUiButton.gd" id="4_ufukr"]
-[ext_resource type="FontFile" uid="uid://dvsxtyvl3jh8m" path="res://televideo.regular.otf" id="5_u11yd"]
+[ext_resource type="FontFile" uid="uid://bdw8xbjbds81h" path="res://GlitchGoblin-2O87v.ttf" id="5_w4i4w"]
 [ext_resource type="FontFile" uid="uid://kjqabnifl6g6" path="res://VCR_OSD_MONO_1.001.ttf" id="6_jhest"]
 [ext_resource type="Texture2D" uid="uid://xvn0elatew0k" path="res://COGITO/Assets/Graphics/Trash.png" id="6_l0dou"]
 [ext_resource type="PackedScene" uid="uid://k0i6k7mcajfm" path="res://COGITO/EasyMenus/Components/SaveSlotButton.tscn" id="6_s811w"]
@@ -46,7 +46,7 @@ theme_override_constants/separation = 15
 
 [node name="TitleLabel" type="Label" parent="ContentMain"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("5_u11yd")
+theme_override_fonts/font = ExtResource("5_w4i4w")
 theme_override_font_sizes/font_size = 45
 text = "UNTRUST US"
 horizontal_alignment = 1
@@ -56,6 +56,13 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("6_jhest")
 theme_override_font_sizes/font_size = 25
 text = "alpha 1.0"
+horizontal_alignment = 1
+
+[node name="TitleLabel3" type="Label" parent="ContentMain"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_jhest")
+theme_override_font_sizes/font_size = 25
+text = "created by Ruairi Delahunt"
 horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="ContentMain"]

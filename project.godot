@@ -11,12 +11,12 @@ config_version=5
 [application]
 
 config/name="Untrust-Us"
-run/main_scene="res://COGITO/DemoScenes/COGITO_0_MainMenu.tscn"
+run/main_scene="res://COGITO/farm.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=120
-boot_splash/image="res://water 3.png"
-boot_splash/fullsize=false
-config/icon="res://COGITO/COGITO_icon.png"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://art/uuicon.png"
+config/icon="res://art/uuicon.png"
 
 [autoload]
 

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw8g3wrx3fj1v"]
+
+[ext_resource type="PackedScene" uid="uid://bw5f6p5f8ithk" path="res://Trailer_Park/Models/Trailer_Park_Props.fbx" id="1_dgh0g"]
+
+[node name="Trailer_Park_Props" instance=ExtResource("1_dgh0g")]
