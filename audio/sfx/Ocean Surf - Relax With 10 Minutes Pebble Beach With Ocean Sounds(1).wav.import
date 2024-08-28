@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clcr7d20w4vix"
+path="res://.godot/imported/Ocean Surf - Relax With 10 Minutes Pebble Beach With Ocean Sounds(1).wav-7838947c98350593296dde5e70b8c382.sample"
+
+[deps]
+
+source_file="res://audio/sfx/Ocean Surf - Relax With 10 Minutes Pebble Beach With Ocean Sounds(1).wav"
+dest_files=["res://.godot/imported/Ocean Surf - Relax With 10 Minutes Pebble Beach With Ocean Sounds(1).wav-7838947c98350593296dde5e70b8c382.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

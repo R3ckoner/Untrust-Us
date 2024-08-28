@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://deiodudn65pny"]
 
-[ext_resource type="PackedScene" uid="uid://hl6anvdnghf2" path="res://PSX_Forest_Level_byStarkCrafts/PSX_Forest_AssetCollection_byStarkCrafts.fbx" id="1_y3o53"]
+[ext_resource type="PackedScene" uid="uid://hl6anvdnghf2" path="res://art/PSX_Forest_Level_byStarkCrafts/PSX_Forest_AssetCollection_byStarkCrafts.fbx" id="1_y3o53"]
 
 [node name="PSX_Forest_AssetCollection_byStarkCrafts" instance=ExtResource("1_y3o53")]

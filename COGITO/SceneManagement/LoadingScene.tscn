@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1tj50tt4hw2j"]
+[gd_scene load_steps=5 format=3 uid="uid://d1tj50tt4hw2j"]
 
 [ext_resource type="Script" path="res://COGITO/SceneManagement/loading_screen.gd" id="1_eqjm8"]
+[ext_resource type="FontFile" uid="uid://kjqabnifl6g6" path="res://VCR_OSD_MONO_1.001.ttf" id="2_coaom"]
 
-[sub_resource type="Gradient" id="Gradient_mxr7g"]
-offsets = PackedFloat32Array(0, 0.995283)
-colors = PackedColorArray(0.054902, 0.533333, 0.478431, 1, 0.207843, 0.631373, 0.843137, 1)
+[sub_resource type="Gradient" id="Gradient_0byg8"]
+offsets = PackedFloat32Array(0, 0.116883, 0.181818, 0.233766, 0.506494, 1)
+colors = PackedColorArray(5.77569e-07, 0.365471, 0.583881, 1, 0.61843, 0.702065, 0.787994, 1, 0.962002, 0.603212, 0.745028, 1, 0.968081, 0.666698, 0.785823, 1, 1, 1, 1, 1, 1, 0.321569, 0.0784314, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_lmuc0"]
-gradient = SubResource("Gradient_mxr7g")
+gradient = SubResource("Gradient_0byg8")
 fill_from = Vector2(0.495726, 0.598291)
+metadata/_snap_enabled = true
 
 [node name="LoadingScene" type="CanvasLayer"]
 script = ExtResource("1_eqjm8")
@@ -44,4 +46,5 @@ offset_right = 36.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_coaom")
 text = "LOADING"

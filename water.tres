@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bahlpiok7xiyq"]
+
+[ext_resource type="Shader" path="res://water.gdshader" id="1_yps8f"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_yps8f")
+shader_parameter/albedo = Color(0.000970172, 0.0668212, 0.388601, 1)
+shader_parameter/scroll_speed1 = Vector2(0.01, 0)
+shader_parameter/scroll_speed2 = Vector2(-0.01, 0)
+shader_parameter/blend_factor = 0.5
+shader_parameter/scale1 = Vector2(100, 100)
+shader_parameter/scale2 = Vector2(100, 100)
+shader_parameter/wave_strength = 1.0
+shader_parameter/wave_scale = 0.1
+shader_parameter/pixelation_level = 64
+shader_parameter/FoamSize = 0.5
+shader_parameter/WaterOpacity = 0.5
+shader_parameter/FoamGlowIntensity = 0.5

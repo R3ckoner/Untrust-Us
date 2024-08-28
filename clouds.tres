@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://u8bnrf3pdcly"]
 
-[ext_resource type="Texture2D" uid="uid://bs585q41n7fa0" path="res://PSX Nature Volume 1/LowPoly Nature Textures/sky clouds.png" id="1_dh21v"]
+[ext_resource type="Texture2D" uid="uid://bs585q41n7fa0" path="res://art/PSX Nature Volume 1/LowPoly Nature Textures/sky clouds.png" id="1_dh21v"]
 
 [resource]
 transparency = 1

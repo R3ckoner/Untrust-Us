@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dq6tvhqcy2aps"]
+[gd_scene load_steps=17 format=3 uid="uid://dq6tvhqcy2aps"]
 
 [ext_resource type="Theme" uid="uid://leudtt5jh16a" path="res://COGITO/Theme/Cogito_Theme_A.tres" id="1_74dia"]
 [ext_resource type="Script" path="res://COGITO/EasyMenus/Scripts/main_menu_controller.gd" id="1_lbw7r"]
@@ -13,6 +13,8 @@
 [ext_resource type="Script" path="res://COGITO/Scripts/menu_scene_switcher.gd" id="9_kfsif"]
 [ext_resource type="Script" path="res://COGITO/EasyMenus/Scripts/main_menu_saveslot_manager.gd" id="13_4uenq"]
 [ext_resource type="Texture2D" uid="uid://cbs0tcr550wbk" path="res://DALL·E 2024-08-21 19.17.39 - A seamless PS1-style skybox panorama with an ultrawide aspect ratio, depicting an overcast day with a mountain range in the background and a lake in t.webp" id="13_j77lq"]
+[ext_resource type="Texture2D" uid="uid://i46lyue0niv7" path="res://COGITO/Screenshot 2024-08-27 193039.png" id="14_11itu"]
+[ext_resource type="AudioStream" uid="uid://dj7fbewhobh4r" path="res://audio/music/UntrustUSMM.mp3" id="15_icfs7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n66hi"]
 
@@ -21,6 +23,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1547.0
+offset_bottom = -716.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_74dia")
@@ -31,12 +35,13 @@ sound_click = ExtResource("4_mhv4c")
 
 [node name="ContentMain" type="VBoxContainer" parent="."]
 layout_mode = 2
-offset_left = 100.0
-offset_top = 50.0
-offset_right = 600.0
-offset_bottom = 671.0
+offset_left = 233.0
+offset_top = 118.0
+offset_right = 733.0
+offset_bottom = 739.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.53185, 1.55336)
 theme_override_constants/separation = 15
 
 [node name="TitleLabel" type="Label" parent="ContentMain"]
@@ -126,6 +131,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_n66hi")
 
 [node name="LegacyDemoSceneButton" type="Button" parent="ContentMain/GameMenu/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("6_jhest")
@@ -162,16 +168,31 @@ offset_top = 603.0
 offset_right = 600.0
 offset_bottom = 603.0
 script = ExtResource("13_4uenq")
-start_game_scene = "res://COGITO/DemoScenes/COGITO_3_Lobby.tscn"
+start_game_scene = "res://COGITO/farm.tscn"
 
 [node name="LegacyDemoSceneSwitcher" type="Node" parent="."]
 script = ExtResource("9_kfsif")
 start_game_scene = "res://COGITO/DemoScenes/COGITO_1_LegacyDemo.tscn"
 
 [node name="Dall·e2024-08-2119_17_39-ASeamlessPs1-styleSkyboxPanoramaWithAnUltrawideAspectRatio,DepictingAnOvercastDayWithAMountainRangeInTheBackgroundAndALakeInT" type="Sprite2D" parent="."]
-position = Vector2(1115, 357.875)
-scale = Vector2(0.539063, 0.705322)
+visible = false
+z_index = -1
+position = Vector2(1028, 576.188)
+scale = Vector2(1.14621, 1.13245)
 texture = ExtResource("13_j77lq")
+
+[node name="Screenshot2024-08-27193039" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1075, 559.5)
+scale = Vector2(0.999071, 1.20344)
+texture = ExtResource("14_11itu")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_icfs7")
+volume_db = 0.1
+autoplay = true
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
 
 [connection signal="pressed" from="ContentMain/GameMenu/VBoxContainer/HBoxContainerA/DeleteSlot_A" to="ContentMain/GameMenu/VBoxContainer/HBoxContainerA/SaveSlot_A" method="_on_delete_slot_pressed"]
 [connection signal="pressed" from="ContentMain/GameMenu/VBoxContainer/HBoxContainerB/DeleteSlot_B" to="ContentMain/GameMenu/VBoxContainer/HBoxContainerB/SaveSlot_B" method="_on_delete_slot_pressed"]
