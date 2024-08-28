@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://0c32kepv0ahx"]
+[gd_scene load_steps=30 format=3 uid="uid://0c32kepv0ahx"]
 
 [ext_resource type="Script" path="res://COGITO/Scripts/player_hud_manager.gd" id="1_0wdkf"]
 [ext_resource type="PackedScene" uid="uid://dhlrhobg5d4dj" path="res://COGITO/Components/UI/UI_PromptComponent.tscn" id="3_06ipe"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://d2dt6mcv83j64" path="res://COGITO/Components/UI/UI_AttributeComponent.tscn" id="20_lscav"]
 [ext_resource type="FontFile" uid="uid://dtnv1vg5jtg8i" path="res://nullisy.script.ttf" id="20_ou2fv"]
 [ext_resource type="FontFile" uid="uid://kjqabnifl6g6" path="res://VCR_OSD_MONO_1.001.ttf" id="21_24msc"]
+[ext_resource type="Shader" path="res://pixel.gdshader" id="23_6k8ka"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1f12m"]
 blend_mode = 1
@@ -41,6 +42,15 @@ bg_color = Color(0.101961, 0.101961, 0.101961, 0.784314)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbke8"]
 bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fu24c"]
+shader = ExtResource("23_6k8ka")
+shader_parameter/change_color_depth = true
+shader_parameter/target_color_depth = 5
+shader_parameter/dithering = true
+shader_parameter/scale_resolution = true
+shader_parameter/target_resolution_scale = 3
+shader_parameter/enable_recolor = false
 
 [node name="Player_HUD" type="Control"]
 layout_mode = 3
@@ -514,6 +524,12 @@ grow_vertical = 2
 mouse_filter = 2
 theme = ExtResource("5_j6s1a")
 theme_override_styles/panel = SubResource("StyleBoxFlat_rbke8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_fu24c")
+layout_mode = 0
+offset_right = 3140.0
+offset_bottom = 1440.0
 
 [connection signal="timeout" from="HintTimer" to="." method="_on_hint_timer_timeout"]
 [connection signal="drop_slot_data" from="InventoryInterface" to="." method="_on_inventory_interface_drop_slot_data"]
