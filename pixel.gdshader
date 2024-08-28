@@ -21,15 +21,15 @@ uniform sampler2D to_gradient: hint_default_black;
 
 int dithering_pattern(ivec2 fragcoord) {
 	const int pattern[] = {
-		-4, +0, -3, +1, 
-		+2, -2, +3, -1, 
-		-3, +1, -4, +0, 
+		-4, +0, -3, +1,
+		+2, -2, +3, -1,
+		-3, +1, -4, +0,
 		+3, -1, +2, -2
 	};
-	
+
 	int x = fragcoord.x % 4;
 	int y = fragcoord.y % 4;
-	
+
 	return pattern[y * 4 + x];
 }
 
@@ -67,7 +67,7 @@ vec3 rgb2hsv(vec3 rgb) { //Converts RGB values to HSV
 	}
 
 
-	return vec3(h,s,cmax); // Keep original alpha value 
+	return vec3(h,s,cmax); // Keep original alpha value
 
 
 }
@@ -109,18 +109,18 @@ vec3 hsv2rgb(vec3 hsv) { //Converts HSV values to RGB
 	rgb[2] = rgb[2] + m;
 
 
-	return rgb; 
+	return rgb;
 }
 
 
 void fragment() {
-	
+
 	vec2 iResolution = 1.0 / SCREEN_PIXEL_SIZE;
     vec2 q = FRAGCOORD.xy / iResolution.xy;
 	ivec2 uv = ivec2(q);
-	
+
 	vec3 color = texture(screen_texture, vec2(q.x,q.y) ).xyz;
-	
+
 	if(scale_resolution){
 		uv = ivec2(FRAGCOORD.xy / float(target_resolution_scale));
 		color = texelFetch(screen_texture, uv * target_resolution_scale, 0).rgb;
@@ -128,7 +128,7 @@ void fragment() {
 		uv = ivec2(FRAGCOORD.xy);
 		color = texelFetch(screen_texture, uv, 0).rgb;
 	}
-	
+
 	if(enable_recolor){
 		vec3 hsv = rgb2hsv(color);
 		float color_pos = (hsv.x / 360.0);
@@ -142,15 +142,15 @@ void fragment() {
 	}
 
 
-	
+
 	// Convert from [0.0, 1.0] range to [0, 255] range
 	ivec3 c = ivec3(round(color * 255.0));
-	
+
 	// Apply the dithering pattern
 	if (dithering) {
 		c += ivec3(dithering_pattern(uv));
 	}
-	
+
 	vec3 final_color;
 	if(change_color_depth){
 		// Truncate from 8 bits to color_depth bits
@@ -159,7 +159,7 @@ void fragment() {
 	} else {
 		final_color = vec3(c) / float(1 << 8);
 	}
-	
+
 	// Convert back to [0.0, 1.0] range
 	COLOR.rgb = final_color;
 }

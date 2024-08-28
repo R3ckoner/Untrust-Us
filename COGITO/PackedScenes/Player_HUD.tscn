@@ -526,6 +526,7 @@ theme = ExtResource("5_j6s1a")
 theme_override_styles/panel = SubResource("StyleBoxFlat_rbke8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
 material = SubResource("ShaderMaterial_fu24c")
 layout_mode = 0
 offset_right = 3140.0
