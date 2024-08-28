@@ -32,9 +32,13 @@ You inherit a seemingly peaceful farm, but all is not as it seems. During the da
 - **Dynamic Crafting System:** Craft weapons, tools, and defenses during the day to use against the horrors of the night.
 - **Immersive Atmosphere:** Explore a dark, rainy environment with atmospheric sound design that intensifies as the day turns to night.
 
-### Gameplay Screenshot
+### Gameplay Screenshots
 
 ![screen1](https://github.com/user-attachments/assets/535d2464-83d4-47a9-b5eb-a72b8065f21b)
+
+![Screenshot 2024-08-27 193039](https://github.com/user-attachments/assets/efbf0e88-8b0a-4016-a4ab-6f7f12bc9b2a)
+
+![Screenshot 2024-08-27 223143](https://github.com/user-attachments/assets/c332d902-1e58-4fb3-adfb-b4ab00c77a62)
 
 ## Getting Started
 
